@@ -1,0 +1,43 @@
+{
+  "name": "@kinkiwiki/chat-memory-store",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "npx eslint src --ext .ts,.tsx",
+    "format": "prettier --write .",
+    "dev": "node --trace-uncaught --no-warnings --loader ts-node/esm src/example.ts",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kinkiwiki/chat-memory-store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kinkiwiki/chat-memory-store/issues"
+  },
+  "homepage": "https://github.com/kinkiwiki/chat-memory-store#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.15.29",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "prettier": "^3.5.3",
+    "rollup": "^4.41.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@redis/client": "^5.1.1",
+    "@rollup/plugin-json": "^6.1.0"
+  }
+}
